@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -36,13 +36,17 @@ export function CardDialog({
   const [tags, setTags] = useState<string[]>([]);
   const [tagInput, setTagInput] = useState("");
 
-  const handleOpenChange = (isOpen: boolean) => {
-    if (isOpen) {
+  useEffect(() => {
+    if (open) {
       setFront(initialFront || "");
       setBack(initialBack || "");
       setTags(initialTags || []);
       setTagInput("");
-    } else {
+    }
+  }, [open, initialFront, initialBack, initialTags]);
+
+  const handleOpenChange = (isOpen: boolean) => {
+    if (!isOpen) {
       setFront("");
       setBack("");
       setTags([]);
