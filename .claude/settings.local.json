@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(del:*)",
+      "Bash(del srcApp.test.js)",
+      "Bash(del srclogo.svg)",
+      "Bash(npm start)",
+      "Bash(npm uninstall:*)",
+      "Bash(taskkill:*)",
+      "Bash(pkill:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
