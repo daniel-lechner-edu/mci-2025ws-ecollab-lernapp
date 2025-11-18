@@ -51,7 +51,7 @@ export function HomePage({ onOpenSet }: HomePageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-background p-6">
+    <div className="bg-background p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-4xl font-bold">Flashcards</h1>

@@ -59,7 +59,7 @@ export function SetDetailPage({ setId, onBack }: SetDetailPageProps) {
 
   if (!set) {
     return (
-      <div className="min-h-screen bg-background p-6">
+      <div className="bg-background p-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-muted-foreground mb-4">Set not found</p>
           <Button onClick={onBack}>Back to Home</Button>
@@ -109,7 +109,7 @@ export function SetDetailPage({ setId, onBack }: SetDetailPageProps) {
 
   if (learnMode) {
     return (
-      <div className="min-h-screen bg-background p-6">
+      <div className="bg-background p-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <h1 className="text-3xl font-bold mb-2">{set.title}</h1>
@@ -126,7 +126,7 @@ export function SetDetailPage({ setId, onBack }: SetDetailPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-background p-6">
+    <div className="bg-background p-6">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-6">
           <Button onClick={onBack} variant="outline" size="icon">
